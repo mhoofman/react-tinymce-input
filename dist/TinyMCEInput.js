@@ -165,6 +165,7 @@ var TinyMCEInput = React.createClass({
       setup: this.setupEditor
     });
     tinymce.init(tinymceConfig);
+    this.editor = tinymce.get(this.state.id);
   },
   initTinyMCE: function initTinyMCE() {
     var currentTime = Date.now();
